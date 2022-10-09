@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize'
 
 
 const connection = new Sequelize("usuario", "root", "123", {
-    host: '172.24.0.1',
+    host: '192.168.0.20',
     dialect: 'mysql'
  })
 
