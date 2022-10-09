@@ -1,6 +1,4 @@
-FROM: node:17
-
-WORKDIR: ./server
+FROM: node
 
 EXPOSE: 3001
 
