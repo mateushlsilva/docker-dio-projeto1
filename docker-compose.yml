@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: my_apache_app
+    ports:
+      - 80:80
+    volumes:
+      - ./client:/usr/local/apache2/htdocs
+  
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: '123'
+      MYSQL_DATABASE: "usuario"
+    ports:
+      - 3306:3306
+    volumes:
+      - /data/mysql:/var/lib/mysql
