@@ -18,3 +18,7 @@ services:
       - 3306:3306
     volumes:
       - ./data/mysql:/var/lib/mysql
+  server:
+    image: server:1.0
+    ports:
+      - 3001:3001
